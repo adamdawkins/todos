@@ -1,0 +1,27 @@
+<template name="ItemsIndex">
+<h1>All Items: <small>{{open_items}}/{{total}}</small></h1>
+  {{>CreateItem}}
+  <ul class="list-group">
+    {{#each items}}
+    {{>Item}}
+    {{/each}}
+  </ul>
+</template>
+
+<template name="Item">
+{{#if is_completed}}
+<li class="list-group-item" style="text-decoration: line-through; color:#999">
+{{name}}
+{{username}}
+{{created}}
+</li>
+{{else}}
+<li class="list-group-item">
+<input type="checkbox"/> 
+{{name}}
+{{username}}
+{{created}}
+</li>
+{{/if}}
+</template>
+

@@ -1,0 +1,7 @@
+{
+  "packages": {
+    "iron-router": {},
+    "bootstrap-flatly": {},
+    "momentjs": {}
+  }
+}
